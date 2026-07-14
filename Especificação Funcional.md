@@ -2,7 +2,7 @@ REQUERIMENTO DE NOVO DESENVOLVIMENTO (RND)
 
 1. Informações Gerais
 
-Título: UNIDAS - Atualização em Massa de Condições de Preço (PB00 / PBXX) em Pedidos de Compra
+Título: Atualização em Massa de Condições de Preço (PB00 / PBXX) em Pedidos de Compra
 
 Solicitante:
 Área de Suprimentos
@@ -23,13 +23,13 @@ Alta
 
 2.1 Origem do Problema
 
-Existe uma inconsistência entre os valores aprovados no sistema Locavia e os pedidos de compra criados no SAP. A raiz do problema está no fato de que o Locavia permite a aprovação de pedidos com quantidades fracionadas, enquanto o SAP aceita apenas quantidades inteiras (absolutas). Ao receber o pedido, o SAP arredonda a quantidade automaticamente, gerando uma divergência nos valores finais entre os dois sistemas.
+Existe uma inconsistência entre os valores aprovados no sistema Locavia e os pedidos de compra criados no SAP. A raiz do problema está no fato de que o Sistema Legado permite a aprovação de pedidos com quantidades fracionadas, enquanto o SAP aceita apenas quantidades inteiras (absolutas). Ao receber o pedido, o SAP arredonda a quantidade automaticamente, gerando uma divergência nos valores finais entre os dois sistemas.
 
 Essa inconsistência se manifesta nas condições de preço dos itens, que podem estar registradas como PB00 (preço bruto com registro de condição) ou PBXX (preço bruto sem registro de condição), a depender da origem do pedido.
 
 2.2 Motivação e Escopo da Solução
 
-Este desenvolvimento tem caráter de mitigação de backlog: a solução visa corrigir em massa os pedidos já existentes que apresentam divergência de valores. A correção do processo de integração entre Locavia e SAP para evitar novas ocorrências será tratada em iniciativa separada, fora do escopo deste desenvolvimento.
+Este desenvolvimento tem caráter de mitigação de backlog: a solução visa corrigir em massa os pedidos já existentes que apresentam divergência de valores. A correção do processo de integração entre Legado e SAP para evitar novas ocorrências será tratada em iniciativa separada, fora do escopo deste desenvolvimento.
 
 Além disso, a atualização manual dos valores — realizada item a item durante o lançamento do documento financeiro (MIRO) — é:
 
